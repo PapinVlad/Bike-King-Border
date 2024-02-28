@@ -1,0 +1,327 @@
+body{
+    
+}
+.wrapper{
+    margin:  1rem;
+    margin-left: 75px;
+}
+.contact_info, .contact_form {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    padding: 1rem;
+    margin-bottom: 5rem;
+    border-radius: 15px;
+    box-shadow: rgba(255, 89, 34, 0.25) 0px 54px 55px, rgba(255, 89, 34, 0.12) 0px -12px 30px, rgba(255, 89, 34, 0.12) 0px 4px 6px, rgba(255, 89, 34, 0.17) 0px 12px 13px, rgba(255, 89, 34, 0.09) 0px -3px 5px;
+}
+.info_name h1{
+    text-align: center;
+    width: 100%;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 4px #000000;
+    font-size: 3.5rem;
+
+}
+h1 span{
+    color: #819B57;
+}
+
+.info_mail{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info_mail h2{
+    text-transform: uppercase;
+    font-size: 2rem ;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.info_mail p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    padding: 1rem;
+}
+.info_mail a{
+    background: #819B57;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    width: 15rem;
+    text-transform: capitalize;
+    transform: translateZ(0) scale(1);
+    transition: transform .2s;
+
+}
+.info_mail a:visited{
+    color: blue;
+}
+.info_mail a:hover{
+    transform: scale(1.15);
+}
+.info_mail a:not(:disabled):hover:active {
+    transform: scale(1.05) translateY(.125rem);
+  }
+.info_mail a:focus {
+    outline: 0 solid transparent;
+  }
+
+ i{
+    font-size: 2rem;
+    padding-right: 1rem;
+    
+}
+.info_adress{
+    margin-top: 1rem;
+    text-align: center;
+}
+.info_adress i{
+    
+    margin-bottom: 1rem;
+    color: #819B57; 
+    transform: translateZ(0) scale(1);
+    transition: transform .2s;
+}
+
+.info_adress i:hover{
+    transform: scale(1.25);
+}
+.info_adress i:not(:disabled):hover:active {
+    transform: scale(1.05) translateY(.125rem);
+  }
+.info_adress address{
+    text-decoration: underline;
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.socials a>i{
+    color: #819B57;
+    font-size: 3rem;
+}
+.socials a{
+    transform: translateZ(0) scale(1);
+    transition: transform .2s;
+}
+.socials a>i:hover{
+    color:#ff5922 ;
+        transform: scale(1.25);
+}
+
+
+
+/* form */ /* form */ /* form */ /* form */ /* form */ /* form */ /*  */
+ 
+ .form_field{
+    border: 3px solid #819B57;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+ .form_field legend{
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family:  "Racing Sans One", sans-serif;
+ }
+.form_element{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0;
+    
+ } 
+ label{
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+input{
+    border: #819B57 2px solid;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+textarea{
+    border: #819B57 2px solid;
+
+}
+.form_element button{
+    background: #819B57;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    
+    text-transform: capitalize;
+    transform: translateZ(0) scale(1);
+    transition: transform .2s;
+    margin: 1rem;
+    
+}
+
+.form_element button:visited{
+    color: blue;
+}
+.form_element button:hover{
+    transform: scale(1.15);
+}
+.form_element button:not(:disabled):hover:active {
+    transform: scale(1.05) translateY(.125rem);
+  }
+  .form_element button:focus {
+    outline: 0 solid transparent;
+  }
+.button {
+    display: flex;
+    flex-direction: row;
+}
+textarea{
+    border-radius: 5px;
+}
+.contact_form{
+    height: auto;
+} 
+.form_element span{
+    color:red
+}
+@media screen and (min-width:991px){
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 1rem ;
+        max-height: 100vh;
+        align-content: center;
+        margin-left: 10vw;
+        
+    }
+    section {
+        width: 50%;
+        max-height: 100%;
+        margin-left:3rem;
+        
+    }
+}
+
+/* Modal */ /* Modal */ /* Modal */ /* Modal */ /* Modal */ /* Modal */ /* Modal */ /* Modal */
+
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+    display: none;
+    
+    
+}
+.modal_form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0,0,0,0.75);
+    width: 100vw;
+}
+  .close{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    background: white;
+    padding: 5px 15px;
+    box-shadow: 0 0 10px grey;
+    color: #819B57 ;
+    font-size:4rem;
+    
+} 
+.street-view, .google-map{
+    margin: 1rem;
+    height: 50vh;
+    box-shadow: rgba(255, 89, 34, 0.25) 0px 54px 55px, rgba(255, 89, 34, 0.12) 0px -12px 30px, rgba(255, 89, 34, 0.12) 0px 4px 6px, rgba(255, 89, 34, 0.17) 0px 12px 13px, rgba(255, 89, 34, 0.09) 0px -3px 5px;
+    
+}
+
+iframe{
+    height: 50vh;
+    width: 100%;
+    border-radius: 10%;
+    border: 15px solid #819B57;
+    outline: 15px solid orange ;
+}
+
+
+.modal_message{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+    display: none;
+    background-color: rgba(0,0,0,0.75);
+}
+.modal_messagee{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 15%;
+}
+.modal_message_form{
+    background-color: #819B57;
+    color: aliceblue;
+}
+.closee{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    background: white;
+    padding: 5px 15px;
+    box-shadow: 0 0 10px grey;
+    color: #819B57 ;
+    font-size:4rem;
+    
+}
+.modal_message_form{
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 25%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+
+

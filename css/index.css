@@ -1,0 +1,326 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero{
+    height: 70vh;
+    background-position: center;
+    background-image: url(../images/Slice_1_2048x915_crop_top.webp);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+        
+}
+.hero_container {
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+width: max-content;
+background-color: hsla(0, 0%, 0%, 0.296);
+border-radius: 1rem;
+}
+.hero_container h1{
+    color: wheat;
+    padding-top: 2rem;
+    text-align: center;
+    max-width: 50%;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 4px #000000;
+    font-size: 3.5rem;
+}
+.hero_container a{
+    background: #819B57;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    width: 15rem;
+    text-transform: capitalize;
+    transform: translateZ(0) scale(1);
+    transition: transform .2s;
+}
+.hero_container a:hover{
+    transform: scale(1.15);
+}
+.advanteges{
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #819B57;
+    border-radius: 10px;
+}
+.adv_content_text{
+    margin-bottom: .5rem;
+    margin-left: 1rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.about{
+    border-radius: 15px;
+    background-color: #faf4ea;;
+    min-height: 100vh;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    
+}
+.about_content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    
+}
+.about_content h2{
+    font-weight: 800;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+
+}
+.about_text{
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+
+}
+.about_text span{
+    color: #819B57;
+}
+.about_img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.about_img img{
+    border-radius:400px 400px 0px 0px;
+    
+    
+
+}
+
+.about_img figcaption{
+    margin-top: 1rem;
+    background: #819B57;
+    
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    width: 15rem;
+    text-transform: capitalize;
+    transform: translateZ(0) scale(1);
+    transition: transform .2s;
+}
+.about_img figcaption:hover{
+    transform: scale(1.15);
+}
+.about_img a{
+    color: white;
+    text-decoration: none;
+}
+
+.type_of_bikes{
+    background-color: #819B57;
+    border-radius: 15px;
+   min-height: 80vh;
+   border: 3px solid black;
+   box-shadow: 18px 26px 53px 12px rgba(129, 155, 87, 1);
+}
+ .type_of_bikes_wrapper{
+    margin:1.5rem
+} 
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title span{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.title p{
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    font-size: 2.3rem;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.categories{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+
+  
+      
+      
+}
+.category{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: wheat;
+    border-radius: 15px;
+    transform: translateZ(0) scale(1);
+    transition: transform .2s;
+    
+    
+}
+.category:hover{
+    transform: scale(1.15);
+}
+.category_img img{
+    height: 5rem;
+    width: 5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.category_type h3{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.category_link i{
+    color: #819B57;
+    border: 2px solid white ;
+    text-align: center;
+}
+.working_hours{
+    text-align: center;
+    margin-top: 3rem;
+    background-color:#faf4ea ;
+    border-radius: 15px;
+   min-height: 80vh;
+   border: 3px solid black;
+   box-shadow: 18px -19px 53px 13px rgba(223, 152, 37, 1);
+  /*  display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center; */
+}
+.hours_days, .hours_text{
+    margin: 15% 15%;
+    font-size: 1.5rem;
+}
+.hours_days{
+    color: white;
+    background-image: url(../images/hour-bg-1.png);
+    background-size: cover;
+}
+.hours_days div{
+    padding: 15px ;
+}
+
+.footer{
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top:  2rem;
+    background:#819B57;
+    padding:30px 0px;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:#faf4ea;
+    font-size:1rem;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:#faf4ea;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#ff5922;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
+
+    @media screen and (min-width:991px){
+        #main {
+            flex-direction: column;
+            max-height: none;
+            align-items: center;
+        }
+        #main section{
+            width: 100%;
+            margin-left: 0;
+        }
+        .adv_content{
+            display: flex;
+            flex-direction: row;
+        }
+        .about{
+            display: flex;
+            flex-direction: row;
+        }
+        .about_content{
+            width: 50%;
+            justify-content: space-evenly;
+        }
+        .type_of_bikes{
+            max-width: 50%;
+        }
+        .working_hours{
+            max-width: 50%;
+        }
+        footer{
+            width: 100%;
+        }
+    }

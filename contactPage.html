@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bikes and much more amazing things which you can buy">
+    <meta name="keywords" content="Bike, scooter, Byke King Borders, Scotland, Electric Bikes">
+    <link rel="shortcut icon" href="./images/bike-svgrepo-com.svg" type="image/x-icon">
+    <title>Bike King Borders</title>
+    <script src="https://kit.fontawesome.com/c92e82a337.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/allcss.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <!--  &#9776 translated to the hamburger menu-->
+            
+            <ul class="main-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="">Bestsellers</a></li>
+                <li><a href="">E-Bikes</a></li>
+                <li><a href="#main">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="wrapper" id="main">
+        <section class="contact_info">
+            <div class="info_name">
+                <h1>Bike <span>King</span> Borders</h1>
+            </div>
+            <div class="info_mail">
+                <h2>get in touch with us </h2>  
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ullam officiis, 
+                    deserunt possimus totam eius magnam est dolor, 
+                    velit voluptates, quo magni exercitationem necessitatibus? 
+                    Velit commodi labore laborum natus illo?</p>
+                    <a href="mailto:20347962@myclyde.ac.uk" target="_blank" > <i class="fa-regular fa-envelope"></i>send us an email </a>
+
+            </div>
+            <div class="info_adress" id="map-marker">
+                <i class="fa-solid fa-map" aria-hidden="true"></i>
+                <address>50 Prospecthill Rd, Glasgow G42 9LB</address>
+            </div >
+            <div class="socials">
+                <a href="https://facebook.com" target="_blank" rel="noopener" title="View our facebook page">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener" title="View our facebook page">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener" title="View our facebook page">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://wa.me/7777456789" title="View our facebook page">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                <a href="tel:+4733378901"title="View our facebook page">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                </a>
+            </div>
+        </section>
+        <section class="contact_form">
+            <form action="" class="form" onsubmit=" return validateForm()">
+                <fieldset class="form_field">
+                    <legend>Use the form to get in touch</legend>
+                    <div class="form_element">
+                        <label for="name">Name</label>
+                        <input type="text" name="Name" id="name" placeholder="Enter your name..." autofocus  >
+                        <span id="nameError"></span>
+                    </div>
+                    <div class="form_element">
+                        <label for="email">Email</label>
+                        <input type="text" name="Email" id="email" placeholder="Enter your email..."  >
+                        <span id="emailError"></span>
+                    </div>
+                    <div class="form_element">
+                        <label for="message">Enter your message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <span id="messageError"></span>
+                    </div>
+                    <div class="form_element button">
+                        <button  id="submitButton">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </fieldset>
+            </form>
+            
+        </section>
+    </main>
+    <footer>
+    </footer>
+    
+        <div class="modal" id="map_modal">
+            <div class="modal_form">
+                <div class="close" id="close">&#x2715</div>
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.089369304804!2d-4.265761023813445!3d55.82640808632019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488846fac7512f97%3A0x97841ecc6b9f0395!2sGlasgow%20Clyde%20College%20-%20Langside%20Campus!5e0!3m2!1sen!2suk!4v1706182712862!5m2!1sen!2suk"  allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="street-view">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1706182814134!6m8!1m7!1sU6NpOlzf61gDPRzBKtI-6Q!2m2!1d55.8262432082062!2d-4.264899181120629!3f80.3400038203261!4f0!5f0.7820865974627469"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </div>
+            
+    
+        </div>
+        <div class="modal_message" id="message_modal">
+            <div class="modal_messagee">
+                <div class="close" id="closee">&#x2715</div>
+                <div class="modal_icon">
+                </div>
+                <div class="modal_message_form">
+                    <p id=""> Thank you <span id="storedName"> </span> for your message</p>
+                    <p id="">We will send a reply to <span id="storedEmail"></span></p>
+                    <p id="">Here is a copy of your message: <span id="storedMessage"></span></p>
+                </div>
+            </div>
+            
+    
+        </div>
+    
+
+    
+
+        <script>
+            document.getElementById('map-marker').addEventListener('click', function() {
+    var popup = document.querySelector('.modal');
+    popup.style.display = "flex";
+
+    document.getElementById('close').addEventListener('click', function() {
+        var close = document.querySelector('.modal');
+        popup.style.display = "none";
+    });
+});
+
+
+
+
+        </script>
+    <script src="./js/allJs.js"></script>
+</body>
+</html>
